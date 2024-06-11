@@ -28,7 +28,7 @@ body, html {
 .columns-container {
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    gap: 0; /* Remove gap between GIFs and buttons */
 }
 
 .gifs-container {
