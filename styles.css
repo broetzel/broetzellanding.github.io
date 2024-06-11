@@ -25,10 +25,25 @@ body, html {
     position: relative;
 }
 
+.columns-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.gifs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px; /* Padding to make the container more visible */
+}
+
+.gif-image {
+    width: 337.5px; /* Match the size of the buttons */
+    height: auto;
+}
+
 .buttons-container {
-    position: absolute;
-    bottom: -400px; /* Move buttons further down */
-    left: -700px; /* Move buttons further left */
     display: flex;
     flex-direction: column;
     gap: 10px;
