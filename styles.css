@@ -39,7 +39,7 @@ body, html {
 }
 
 .gif-image {
-    width: 337.5px; /* Match the size of the buttons */
+    width: 135px; /* Reduced size by 60% from 337.5px */
     height: auto;
 }
 
