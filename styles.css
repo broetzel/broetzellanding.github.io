@@ -27,12 +27,13 @@ body, html {
 
 .buttons-container {
     position: absolute;
-    bottom: 20%;
-    left: 10%;
+    bottom: 20px; /* Adjust this value to move buttons vertically */
+    left: 20px; /* Adjust this value to move buttons horizontally */
     display: flex;
     flex-direction: column;
     gap: 10px;
     z-index: 2;
+    background-color: rgba(255, 255, 255, 0.5); /* Temporary background color for visibility */
 }
 
 .button-image {
