@@ -49,7 +49,7 @@ body, html {
     gap: 10px;
     z-index: 2;
     padding: 10px; /* Padding to make the container more visible */
-    margin-left: -10px; /* Negative margin to bring buttons closer to GIFs */
+    margin-left: -80px; /* Dramatic negative margin to bring buttons closer to GIFs */
 }
 
 .button-image {
