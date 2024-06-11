@@ -25,21 +25,23 @@ body, html {
     position: relative;
 }
 
-.columns-container {
+.elements-container {
     display: flex;
     align-items: flex-start;
-    gap: 0; /* Remove gap between GIFs and buttons */
+    gap: 0;
+    position: absolute;
+    bottom: -400px; /* Adjust this value to move the entire group vertically */
+    left: -700px; /* Adjust this value to move the entire group horizontally */
 }
 
 .gifs-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 10px; /* Padding to make the container more visible */
 }
 
 .gif-image {
-    width: 135px; /* Reduced size by 60% from 337.5px */
+    width: 135px;
     height: auto;
 }
 
@@ -48,12 +50,11 @@ body, html {
     flex-direction: column;
     gap: 10px;
     z-index: 2;
-    padding: 10px; /* Padding to make the container more visible */
-    margin-left: -80px; /* Dramatic negative margin to bring buttons closer to GIFs */
+    margin-left: -80px; /* Keep the negative margin to align with GIFs */
 }
 
 .button-image {
-    width: 337.5px; /* Increased size by 50% from 225px */
+    width: 337.5px;
     height: auto;
     cursor: pointer;
 }
