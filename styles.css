@@ -38,6 +38,7 @@ body, html {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-right: 12px; /* Adjust this value to bring gifs closer to buttons */
 }
 
 .gif-image {
@@ -50,7 +51,6 @@ body, html {
     flex-direction: column;
     gap: 10px;
     z-index: 2;
-    margin-left: -68px; /* Reduced the negative margin by 15% */
 }
 
 .button-image {
