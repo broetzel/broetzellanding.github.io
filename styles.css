@@ -27,8 +27,8 @@ body, html {
 
 .buttons-container {
     position: absolute;
-    bottom: 20px; /* Adjust this value to move buttons vertically */
-    left: 20px; /* Adjust this value to move buttons horizontally */
+    bottom: 50px; /* Adjust this value to move buttons vertically */
+    left: 50px; /* Adjust this value to move buttons horizontally */
     display: flex;
     flex-direction: column;
     gap: 10px;
