@@ -37,7 +37,7 @@ body, html {
 }
 
 .button-image {
-    width: 150px; /* Adjust the size as needed */
+    width: 225px; /* Increased size by 50% from 150px */
     height: auto;
     cursor: pointer;
 }
