@@ -49,3 +49,31 @@ body, html {
     height: auto;
     cursor: pointer;
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .gif-image, .button-image {
+        width: 25vw; /* Adjust size for medium screens */
+    }
+
+    .layered-container {
+        width: 95%;
+        height: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .elements-container {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center;
+    }
+
+    .gif-image, .button-image {
+        width: 30vw; /* Adjust size for small screens */
+    }
+
+    .layered-container {
+        width: 100%;
+        height: 100%;
+    }
+}
