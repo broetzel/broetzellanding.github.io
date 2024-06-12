@@ -45,10 +45,10 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 0; /* Ensure no gap between columns */
-    align-items: start;
+    display: flex;
+    flex-direction: row; /* Align columns horizontally */
+    justify-content: center;
+    align-items: center;
     width: auto;
     height: auto;
     z-index: 2;
@@ -58,6 +58,7 @@ body, html {
 .gifs-container, .buttons-container {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     pointer-events: auto; /* Ensure clickable elements remain interactive */
 }
 
@@ -68,11 +69,19 @@ body, html {
     cursor: pointer;
 }
 
+.gifs-container {
+    margin-right: -14.5vw; /* Reduce overlap to bring GIFs to the left of the buttons */
+}
+
 /* Media Queries for responsiveness */
 @media screen and (max-width: 1200px) {
     .gif-image, .button-image {
         width: 20vw;
         max-width: 200px;
+    }
+
+    .gifs-container {
+        margin-right: -19.5vw; /* Adjust for responsiveness */
     }
 }
 
@@ -81,11 +90,19 @@ body, html {
         width: 30vw;
         max-width: 150px;
     }
+
+    .gifs-container {
+        margin-right: -29.5vw; /* Adjust for responsiveness */
+    }
 }
 
 @media screen and (max-width: 480px) {
     .gif-image, .button-image {
         width: 40vw;
         max-width: 120px;
+    }
+
+    .gifs-container {
+        margin-right: -39.5vw; /* Adjust for responsiveness */
     }
 }
