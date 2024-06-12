@@ -69,19 +69,11 @@ body, html {
     cursor: pointer;
 }
 
-.gifs-container {
-    margin-right: -14vw; /* Further reduce overlap */
-}
-
 /* Media Queries for responsiveness */
 @media screen and (max-width: 1200px) {
     .gif-image, .button-image {
         width: 20vw;
         max-width: 200px;
-    }
-
-    .gifs-container {
-        margin-right: -19vw; /* Adjust for responsiveness */
     }
 }
 
@@ -90,19 +82,11 @@ body, html {
         width: 30vw;
         max-width: 150px;
     }
-
-    .gifs-container {
-        margin-right: -29vw; /* Adjust for responsiveness */
-    }
 }
 
 @media screen and (max-width: 480px) {
     .gif-image, .button-image {
         width: 40vw;
         max-width: 120px;
-    }
-
-    .gifs-container {
-        margin-right: -39vw; /* Adjust for responsiveness */
     }
 }
