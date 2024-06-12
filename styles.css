@@ -9,7 +9,7 @@ body, html {
 
 .full-screen-section {
     background-image: url('https://i.imgur.com/46LBMKw.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -30,8 +30,8 @@ body, html {
     align-items: flex-start;
     gap: 0;
     position: absolute;
-    bottom: -400px; /* Adjust this value to move the entire group vertically */
-    left: -800px; /* Move the entire container 50px to the left */
+    bottom: 20vh; /* Adjust this value to move the entire group vertically */
+    left: 5vw; /* Adjust this value to move the entire group horizontally */
 }
 
 .gifs-container {
