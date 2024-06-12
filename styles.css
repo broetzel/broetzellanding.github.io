@@ -76,6 +76,10 @@ body, html {
     cursor: pointer;
 }
 
+.buttons-container {
+    margin-left: -13.5vw; /* 30% of 45vw to create the overlap */
+}
+
 /* Media Queries for responsiveness */
 @media screen and (max-width: 1200px) {
     .gif-image {
@@ -85,6 +89,9 @@ body, html {
     .button-image {
         width: 60vw; /* Increase size by 150% */
         max-width: 600px; /* 150% of the original 400px */
+    }
+    .buttons-container {
+        margin-left: -18vw; /* 30% of 60vw to create the overlap */
     }
 }
 
@@ -97,6 +104,9 @@ body, html {
         width: 90vw; /* Increase size by 150% */
         max-width: 450px; /* 150% of the original 300px */
     }
+    .buttons-container {
+        margin-left: -27vw; /* 30% of 90vw to create the overlap */
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -107,5 +117,8 @@ body, html {
     .button-image {
         width: 120vw; /* Increase size by 150% */
         max-width: 360px; /* 150% of the original 240px */
+    }
+    .buttons-container {
+        margin-left: -36vw; /* 30% of 120vw to create the overlap */
     }
 }
