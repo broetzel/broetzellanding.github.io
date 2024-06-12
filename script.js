@@ -20,11 +20,19 @@ function adjustLayout() {
     landingImage.style.height = `${sectionHeight}px`;
 
     // Center the elements container
-    elementsContainer.style.left = `${(sectionWidth - elementsContainer.offsetWidth * scale) / 2}px`;
-    elementsContainer.style.top = `${(sectionHeight - elementsContainer.offsetHeight * scale) / 2}px`;
+    const scaledWidth = elementsContainer.offsetWidth * scale;
+    const scaledHeight = elementsContainer.offsetHeight * scale;
 
-    console.log('Elements container dimensions after scaling:', elementsContainer.offsetWidth * scale, elementsContainer.offsetHeight * scale);
+    elementsContainer.style.left = `${(sectionWidth - scaledWidth) / 2}px`;
+    elementsContainer.style.top = `${(sectionHeight - scaledHeight) / 2}px`;
+
+    console.log('Elements container dimensions after scaling:', scaledWidth, scaledHeight);
     console.log('Elements container position:', elementsContainer.style.left, elementsContainer.style.top);
+
+    // Force repaint
+    elementsContainer.style.display = 'none';
+    elementsContainer.offsetHeight; // trigger reflow
+    elementsContainer.style.display = 'flex';
 }
 
 // Ensure the function runs after all elements are loaded
