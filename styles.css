@@ -70,8 +70,8 @@ body, html {
 }
 
 .button-image {
-    width: 30vw; /* Increase size by 100% */
-    max-width: 300px; /* Double the max width */
+    width: 45vw; /* Increase size by 150% */
+    max-width: 450px; /* 150% of the original 300px */
     height: auto;
     cursor: pointer;
 }
@@ -83,8 +83,8 @@ body, html {
         max-width: 200px;
     }
     .button-image {
-        width: 40vw; /* Increase size by 100% */
-        max-width: 400px; /* Double the max width */
+        width: 60vw; /* Increase size by 150% */
+        max-width: 600px; /* 150% of the original 400px */
     }
 }
 
@@ -94,8 +94,8 @@ body, html {
         max-width: 150px;
     }
     .button-image {
-        width: 60vw; /* Increase size by 100% */
-        max-width: 300px; /* Double the max width */
+        width: 90vw; /* Increase size by 150% */
+        max-width: 450px; /* 150% of the original 300px */
     }
 }
 
@@ -105,7 +105,7 @@ body, html {
         max-width: 120px;
     }
     .button-image {
-        width: 80vw; /* Increase size by 100% */
-        max-width: 240px; /* Double the max width */
+        width: 120vw; /* Increase size by 150% */
+        max-width: 360px; /* 150% of the original 240px */
     }
 }
