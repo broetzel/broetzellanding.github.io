@@ -1,7 +1,8 @@
 // script.js
 function adjustLayout() {
-    const fullScreenSection = document.querySelector('.full-screen-section');
+    const layeredContainer = document.querySelector('.layered-container');
     const elementsContainer = document.querySelector('.elements-container');
+    const fullScreenSection = document.querySelector('.full-screen-section');
 
     const sectionWidth = fullScreenSection.offsetWidth;
     const sectionHeight = fullScreenSection.offsetHeight;
@@ -20,7 +21,6 @@ function adjustLayout() {
 
     elementsContainer.style.left = `${left}px`;
     elementsContainer.style.top = `${top}px`;
-    elementsContainer.style.position = 'absolute';
 }
 
 window.addEventListener('resize', adjustLayout);
