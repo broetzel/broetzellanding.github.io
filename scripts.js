@@ -9,7 +9,7 @@ function adjustLayout() {
 
     // Calculate scale based on viewport size
     const scale = Math.min(sectionWidth / 1920, sectionHeight / 1080);
-    
+
     layeredContainer.style.transform = `scale(${scale})`;
 
     // Center the elements container
