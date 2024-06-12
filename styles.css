@@ -8,7 +8,7 @@ body, html {
 }
 
 .full-screen-section {
-    background-image: url('https://i.imgur.com/803O4l3.png');
+    background-image: url('https://i.imgur.com/46LBMKw.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -31,7 +31,7 @@ body, html {
     gap: 0;
     position: absolute;
     bottom: -400px; /* Adjust this value to move the entire group vertically */
-    left: -800px; /* Move the entire container 50px to the left */
+    left: -750px; /* Move the entire container 50px to the left */
 }
 
 .gifs-container {
