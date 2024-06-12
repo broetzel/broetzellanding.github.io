@@ -16,18 +16,19 @@ function adjustLayout() {
     // Scale the elements container
     elementsContainer.style.transform = `scale(${scale})`;
 
-    // Center the landing image container and elements container
+    // Center the elements container
     const scaledWidth = elementsContainer.offsetWidth * scale;
     const scaledHeight = elementsContainer.offsetHeight * scale;
 
     elementsContainer.style.left = `${(sectionWidth - scaledWidth) / 2}px`;
     elementsContainer.style.top = `${(sectionHeight - scaledHeight) / 2}px`;
 
-    landingImageContainer.style.width = `${sectionWidth}px`;
-    landingImageContainer.style.height = `${sectionHeight}px`;
-
     console.log('Elements container dimensions after scaling:', scaledWidth, scaledHeight);
     console.log('Elements container position:', elementsContainer.style.left, elementsContainer.style.top);
+
+    // Ensure landing image container covers the viewport
+    landingImageContainer.style.width = `${sectionWidth}px`;
+    landingImageContainer.style.height = `${sectionHeight}px`;
 }
 
 // Ensure the function runs after all elements are loaded
