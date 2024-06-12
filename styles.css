@@ -23,16 +23,15 @@ body, html {
 
 .layered-container {
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .elements-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 0;
     position: absolute;
-    bottom: 20%; /* Adjust this value to move the entire group vertically */
-    left: 20%; /* Adjust this value to move the entire group horizontally */
-    transform: translate(-20%, -20%); /* Center the container based on these values */
+    bottom: 20vh; /* Adjust this value to move the entire group vertically */
+    left: 10vw; /* Adjust this value to move the entire group horizontally */
+    transform: scale(0.6); /* Adjust this value to scale the container */
 }
 
 .gifs-container {
@@ -42,7 +41,7 @@ body, html {
 }
 
 .gif-image {
-    width: 135px;
+    width: 20vw; /* Scale relative to viewport width */
     height: auto;
 }
 
@@ -55,7 +54,7 @@ body, html {
 }
 
 .button-image {
-    width: 337.5px;
+    width: 50vw; /* Scale relative to viewport width */
     height: auto;
     cursor: pointer;
 }
