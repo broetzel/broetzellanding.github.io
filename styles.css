@@ -70,7 +70,7 @@ body, html {
 }
 
 .gifs-container {
-    margin-right: -14.5vw; /* Reduce overlap to bring GIFs to the left of the buttons */
+    margin-right: -14vw; /* Further reduce overlap */
 }
 
 /* Media Queries for responsiveness */
@@ -81,7 +81,7 @@ body, html {
     }
 
     .gifs-container {
-        margin-right: -19.5vw; /* Adjust for responsiveness */
+        margin-right: -19vw; /* Adjust for responsiveness */
     }
 }
 
@@ -92,7 +92,7 @@ body, html {
     }
 
     .gifs-container {
-        margin-right: -29.5vw; /* Adjust for responsiveness */
+        margin-right: -29vw; /* Adjust for responsiveness */
     }
 }
 
@@ -103,6 +103,6 @@ body, html {
     }
 
     .gifs-container {
-        margin-right: -39.5vw; /* Adjust for responsiveness */
+        margin-right: -39vw; /* Adjust for responsiveness */
     }
 }
