@@ -2,7 +2,7 @@
 function adjustLayout() {
     const elementsContainer = document.querySelector('.elements-container');
     const fullScreenSection = document.querySelector('.full-screen-section');
-    const landingImage = document.querySelector('.landing-image');
+    const landingImageContainer = document.querySelector('.landing-image-container');
 
     const sectionWidth = fullScreenSection.offsetWidth;
     const sectionHeight = fullScreenSection.offsetHeight;
@@ -15,10 +15,6 @@ function adjustLayout() {
 
     elementsContainer.style.transform = `scale(${scale})`;
 
-    // Ensure landing image covers the viewport
-    landingImage.style.width = `${sectionWidth}px`;
-    landingImage.style.height = `${sectionHeight}px`;
-
     // Center the elements container
     const scaledWidth = elementsContainer.offsetWidth * scale;
     const scaledHeight = elementsContainer.offsetHeight * scale;
@@ -29,10 +25,9 @@ function adjustLayout() {
     console.log('Elements container dimensions after scaling:', scaledWidth, scaledHeight);
     console.log('Elements container position:', elementsContainer.style.left, elementsContainer.style.top);
 
-    // Force repaint
-    elementsContainer.style.display = 'none';
-    elementsContainer.offsetHeight; // trigger reflow
-    elementsContainer.style.display = 'flex';
+    // Ensure landing image container covers the viewport
+    landingImageContainer.style.width = `${sectionWidth}px`;
+    landingImageContainer.style.height = `${sectionHeight}px`;
 }
 
 // Ensure the function runs after all elements are loaded
