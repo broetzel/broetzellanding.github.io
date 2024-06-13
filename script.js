@@ -1,7 +1,8 @@
 // script.js
 function adjustLayout() {
     const fullScreenSection = document.querySelector('.full-screen-section');
-    const combinedContainer = document.querySelector('.combined-container');
+    const landingImageContainer = document.querySelector('.landing-image-container');
+    const elementsContainer = document.querySelector('.elements-container');
 
     const sectionWidth = fullScreenSection.offsetWidth;
     const sectionHeight = fullScreenSection.offsetHeight;
@@ -12,10 +13,14 @@ function adjustLayout() {
     console.log('Viewport dimensions:', sectionWidth, sectionHeight);
     console.log('Calculated scale:', scale);
 
-    // Scale the combined container
-    combinedContainer.style.transform = `scale(${scale})`;
+    // Scale the elements container
+    elementsContainer.style.transform = `scale(${scale})`;
 
-    console.log('Combined container position:', combinedContainer.style.left, combinedContainer.style.top);
+    // Ensure landing image container covers the viewport
+    landingImageContainer.style.width = `${sectionWidth}px`;
+    landingImageContainer.style.height = `${sectionHeight}px`;
+
+    console.log('Elements container position:', elementsContainer.style.left, elementsContainer.style.top);
 }
 
 // Ensure the function runs after all elements are loaded
