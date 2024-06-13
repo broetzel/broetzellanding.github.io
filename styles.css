@@ -15,6 +15,10 @@ body, html {
     align-items: center;
     text-align: center;
     position: relative;
+    background-image: url('https://i.imgur.com/s52HWMf.png');
+    background-size: 150%; /* Zoomed in to 150% */
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .layered-container {
@@ -44,7 +48,7 @@ body, html {
     position: absolute;
     top: 70%; /* Positioned further down */
     left: 0%; /* Further to the left */
-    transform: translate(0%, -30%); /* Adjust for correct alignment */
+    transform: translate(0%, -30%) scale(0.75); /* Adjust for correct alignment */
     display: flex;
     flex-direction: row; /* Align columns horizontally */
     justify-content: center;
