@@ -7,8 +7,8 @@ function adjustLayout() {
     const sectionWidth = fullScreenSection.offsetWidth;
     const sectionHeight = fullScreenSection.offsetHeight;
 
-    // Calculate scale based on viewport size
-    const scale = Math.min(sectionWidth / 1920, sectionHeight / 1080);
+    // Calculate scale based on viewport size and reduce by 25%
+    const scale = Math.min(sectionWidth / 1920, sectionHeight / 1080) * 0.75;
 
     console.log('Viewport dimensions:', sectionWidth, sectionHeight);
     console.log('Calculated scale:', scale);
