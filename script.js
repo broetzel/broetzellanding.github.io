@@ -14,7 +14,7 @@ function adjustLayout() {
     console.log('Calculated scale:', scale);
 
     // Scale the elements container
-    elementsContainer.style.transform = `translate(-2%, -30%) scale(${scale})`;
+    elementsContainer.style.transform = `translate(0%, -30%) scale(${scale})`;
 
     // Ensure landing image container covers the viewport
     landingImageContainer.style.width = `${sectionWidth}px`;
