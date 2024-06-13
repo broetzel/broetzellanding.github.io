@@ -43,8 +43,8 @@ body, html {
 .elements-container {
     position: absolute;
     top: 70%; /* Positioned further down */
-    left: 0%; /* Further to the left */
-    transform: translate(0%, -30%); /* Adjust for correct alignment */
+    left: 0; /* Align with the left edge */
+    transform: translate(0, -30%); /* Adjust for correct alignment */
     display: flex;
     flex-direction: row; /* Align columns horizontally */
     justify-content: center;
