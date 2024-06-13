@@ -42,9 +42,9 @@ body, html {
 
 .elements-container {
     position: absolute;
-    top: 70%; /* Slightly further down */
-    left: 10%; /* Further to the left */
-    transform: translate(-10%, -30%); /* Adjust for correct alignment */
+    top: 70%; /* Positioned further down */
+    left: 5%; /* Further to the left */
+    transform: translate(-5%, -30%); /* Adjust for correct alignment */
     display: flex;
     flex-direction: row; /* Align columns horizontally */
     justify-content: center;
