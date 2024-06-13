@@ -44,7 +44,7 @@ body, html {
     position: absolute;
     top: 70%; /* Slightly further down */
     left: 10%; /* Further to the left */
-    transform: translate(-10%, -70%); /* Adjust for correct alignment */
+    transform: translate(-10%, -30%); /* Adjust for correct alignment */
     display: flex;
     flex-direction: row; /* Align columns horizontally */
     justify-content: center;
