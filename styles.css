@@ -44,7 +44,6 @@ body, html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-100%, 0%); /* Move further left and down */
     display: flex;
     flex-direction: row; /* Align columns horizontally */
     justify-content: center;
@@ -53,6 +52,7 @@ body, html {
     height: auto;
     z-index: 2;
     pointer-events: none; /* Ensure clicks pass through if necessary */
+    transform-origin: center;
 }
 
 .gifs-container, .buttons-container {
